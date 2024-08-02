@@ -1,5 +1,5 @@
 <template>
-  <nav class="p-4 px-8 md:px-64 flex items-center absolute justify-between md:justify-end z-40 w-full text-white mobile-nav">
+  <nav class="p-4 px-8 xl:px-32 flex items-center justify-between absolute z-40 w-full text-white mobile-nav">
     <button
       class="md:hidden flex items-center px-3 py-2 text-black rounded"
       @click="toggleMenu"
@@ -13,109 +13,128 @@
         <path d="M6 18L18 6M6 6l12 12" stroke="currentColor" stroke-width="2" />
       </svg>
     </button>
+
     <div class="flex items-center space-x-4">
-      <a href="/"><img src="/logooahu.png" alt="Logo" class="hidden md:block " /></a>
-      <img src="/logooahu.png" alt="Logo" class="block  md:hidden h-8" />
-      <!-- <div class="relative">
-        <input
-          type="text"
-          placeholder="Search..."
-          class="py-2 pl-10 pr-4 rounded-full bg-gray-200 text-black focus:outline-none focus:ring focus:ring-[#F58C1F] focus:ring-opacity-50"
-        />
-        <svg
-          class="absolute left-3 top-2.5 h-5 w-5 text-gray-400"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M8 12a4 4 0 100-8 4 4 0 000 8z" />
-        </svg>
-      </div> -->
+      <a href="/"><img src="/logooahu.png" alt="Logo" class="hidden md:block" /></a>
+      <img src="/logooahu.png" alt="Logo" class="block md:hidden h-8" />
     </div>
-    <div class="hidden md:flex items-center space-x-6  md:ml-auto">
-  <div class="flex items-center relative hover:text-[#FFDB00] group">
-    <img src="/yellow.svg" alt="Logo" class="ml-2 h-8" />
-    <a href="about" class="relative z-10 ">About</a>
-    <span class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px]    h-1.5 bg-[#FFDB00] transition-all duration-200 scale-x-0 group-hover:scale-x-100"></span>
-  </div>
-  
-  <div class="flex items-center relative hover:text-[#FF53A7] group">
-    <img src="/pink.svg" alt="Logo" class="mr-2 h-8" />
-    <a href="tours" class="relative z-10 ">Tours</a>
-    <span class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px]    h-1.5 bg-[#FF53A7] transition-all duration-200 scale-x-0 group-hover:scale-x-100"></span>
-  </div>
-  
-  <div class="flex items-center relative hover:text-[#FC3743] group">
-    <img src="/red.svg" alt="Logo" class="mr-2 h-8" />
-    <a href="activities" class="relative z-10 ">Activities</a>
-    <span class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px]    h-1.5 bg-[#FC3743] transition-all duration-200 scale-x-0 group-hover:scale-x-100"></span>
-  </div>
 
-  <div class="flex items-center relative  hover:text-[#A84BCA] group">
-    <img src="/purple.svg" alt="Logo" class="mr-2 h-8" />
-    <a href="contact" class="relative z-10 ">Contact</a>
-    <span class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px]    h-1.5 bg-[#A84BCA] transition-all duration-200 scale-x-0 group-hover:scale-x-100"></span>
-  </div>
+    <!-- Centered Middle Links Section for Desktop -->
+    <div class="hidden md:flex justify-center flex-grow space-x-8">
+      <a href="about" class="block text-white hover:text-[#F58C1F]">ABOUT</a>
+      <a href="tours" class="block text-white hover:text-[#F58C1F]">TOURS</a>
+      <a href="activities" class="block text-white hover:text-[#F58C1F]">ACTIVITIES</a>
+      <a href="contact" class="block text-white hover:text-[#F58C1F]">CONTACT</a>
+    </div>
 
-  <img class="mr-4 h-8" src="../public/phoneicon.png" />
-  <img class="mr-4 h-8" src="../public/mailicon.png" />
-  
-  <a href="activities">
-  <button
-    class="py-3 Aileron font-bold px-8 bg-[#F58C1F] text-white rounded-3xl hover:bg-white hover:text-[#F58C1F] hover:underline hover:underline-offset-4 focus:outline-none focus:ring focus:ring-[#F58C1F] focus:ring-opacity-50"
-  >
-    BOOK NOW
-  </button>
-</a>
-</div>
+    <div class="hidden md:flex items-center space-x-6 md:ml-auto">
+      <div class="flex items-center relative hover:text-[#FFDB00] group">
+        <img src="/yellow.svg" alt="Logo" class="ml-2 h-8" />
+        <a href="activities" class="relative z-10">OHAU</a>
+        <span class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px] h-1.5 bg-[#FFDB00] transition-all duration-200 scale-x-0 group-hover:scale-x-100"></span>
+      </div>
 
+      <div class="flex items-center relative hover:text-[#FF53A7] group">
+        <img src="/pink.svg" alt="Logo" class="mr-2 h-8" />
+        <a href="#" class="relative z-10">MAUI</a>
+        <span class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px] h-1.5 bg-[#FF53A7] transition-all duration-200 scale-x-0 group-hover:scale-x-100"></span>
+      </div>
+
+      <div class="flex items-center relative hover:text-[#FC3743] group">
+        <img src="/red.svg" alt="Logo" class="mr-2 h-8" />
+        <a href="#" class="relative z-10">BIG ISLAND</a>
+        <span class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px] h-1.5 bg-[#FC3743] transition-all duration-200 scale-x-0 group-hover:scale-x-100"></span>
+      </div>
+
+      <div class="flex items-center relative hover:text-[#A84BCA] group">
+        <img src="/purple.svg" alt="Logo" class="mr-2 h-8" />
+        <a href="#" class="relative z-10">KAUAI</a>
+        <span class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px] h-1.5 bg-[#A84BCA] transition-all duration-200 scale-x-0 group-hover:scale-x-100"></span>
+      </div>
+    </div>
+
+    <div class="hidden md:flex items-center space-x-4">
+      <img class="mr-4 h-8 ml-6" src="../public/phoneicon.png" />
+      <img class="mr-4 h-8" src="../public/mailicon.png" />
+      <a href="activities">
+        <button
+          class="py-3 Aileron font-bold px-8 bg-[#F58C1F] text-white rounded-3xl hover:bg-white hover:text-[#F58C1F] hover:underline hover:underline-offset-4 focus:outline-none focus:ring focus:ring-[#F58C1F] focus:ring-opacity-50"
+        >
+          BOOK NOW
+        </button>
+      </a>
+    </div>
   </nav>
 
   <div :class="{'translate-x-0': isMenuOpen, '-translate-x-full': !isMenuOpen}" 
-     class="fixed inset-0 bg-white z-50 w-64 text-black transform transition-transform duration-300 ease-in-out md:hidden">
-  <div class="px-2 pt-2 pb-3">
-    <button class="absolute top-0 right-0 m-4" @click="toggleMenu">
-      <svg v-if="isMenuOpen" class="h-6 w-6  text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-      </svg>
-    </button>
-    <div class="mt-16 flex flex-col space-y-4">
-      <div class="flex items-center relative hover:text-[#FFDB00] group">
-        <img src="/yellow.svg" alt="Logo" class="h-8 mb-2" />
-        <a href="#" class="relative z-10">About</a>
-        <span class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px] h-1.5 bg-[#FFDB00] transition-all duration-200 scale-x-0 group-hover:scale-x-100"></span>
-      </div>
-      <div class="flex items-center relative hover:text-[#FF53A7] group">
-        <img src="/pink.svg" alt="Logo" class="h-8 mb-2" />
-        <a href="#" class="relative z-10">Tours</a>
-        <span class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px] h-1.5 bg-[#FF53A7] transition-all duration-200 scale-x-0 group-hover:scale-x-100"></span>
-      </div>
-      <div class="flex items-center relative hover:text-[#FC3743] group">
-        <img src="/red.svg" alt="Logo" class="h-8 mb-2" />
-        <a href="#" class="relative z-10">Activities</a>
-        <span class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px] h-1.5 bg-[#FC3743] transition-all duration-200 scale-x-0 group-hover:scale-x-100"></span>
-      </div>
-      <div class="flex items-center relative hover:text-[#A84BCA] group">
-        <img src="/purple.svg" alt="Logo" class="h-8 mb-2" />
-        <a href="#" class="relative z-10">Contact</a>
-        <span class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px] h-1.5 bg-[#A84BCA] transition-all duration-200 scale-x-0 group-hover:scale-x-100"></span>
-      </div>
-      <div class="flex items-center space-x-4 px-3 py-2">
-        <img class="h-6" src="../public/phoneicon.png" />
-        <img class="h-6" src="../public/mailicon.png" />
-      </div>
-      <button
-        class="w-full py-3 Aileron font-bold px-8 bg-[#F58C1F] text-white rounded-3xl hover:bg-white hover:text-[#F58C1F] hover:underline hover:underline-offset-4 focus:outline-none focus:ring focus:ring-[#F58C1F] focus:ring-opacity-50"
-      >
-        BOOK NOW
+       class="fixed inset-0 bg-white z-50 w-64 text-black transform transition-transform duration-300 ease-in-out md:hidden">
+    <div class="px-2 pt-2 pb-3">
+      <button class="absolute top-0 right-0 m-4" @click="toggleMenu">
+        <svg v-if="isMenuOpen" class="h-6 w-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
       </button>
-    </div>
-  </div>
+      
+      <!-- Centered Middle Links Section for Mobile -->
+      <div class="mt-16 flex flex-col space-y-4">
+        <div class="flex items-center relative hover:text-[#F58C1F] group">
+          <img src="/yellow.svg" alt="Logo" class="h-8 mb-2" />
+          <a href="activities" class="relative z-10">OAHU</a>
+          <span class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px] h-1.5 bg-[#F58C1F] transition-all duration-200 scale-x-0 group-hover:scale-x-100"></span>
+        </div>
+        <div class="flex items-center relative hover:text-[#F58C1F] group">
+          <img src="/pink.svg" alt="Logo" class="h-8 mb-2" />
+          <a href="#" class="relative z-10">MAUI</a>
+          <span class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px] h-1.5 bg-[#F58C1F] transition-all duration-200 scale-x-0 group-hover:scale-x-100"></span>
+        </div>
+        <div class="flex items-center relative hover:text-[#F58C1F] group">
+          <img src="/red.svg" alt="Logo" class="h-8 mb-2" />
+          <a href="#" class="relative z-10">BIG ISLAND</a>
+          <span class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px] h-1.5 bg-[#F58C1F] transition-all duration-200 scale-x-0 group-hover:scale-x-100"></span>
+        </div>
+        <div class="flex items-center relative hover:text-[#F58C1F] group">
+          <img src="/purple.svg" alt="Logo" class="h-8 mb-" />
+          <a href="#" class="relative z-10">KAUKAI</a>
+          <span class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px] h-1.5 bg-[#F58C1F] transition-all duration-200 scale-x-0 group-hover:scale-x-100"></span>
+        </div>
+        <div class="flex items-center pt-8 mx-auto  relative hover:text-[#F58C1F] group">
+          <a href="about" class="block text-black hover:text-[#F58C1F]">ABOUT</a>
+        </div>
+        <div class="flex items-center relative mx-auto hover:text-[#F58C1F] group">
+          <a href="tours" class="block text-black hover:text-[#F58C1F]">TOURS</a>
+        </div>
+        <div class="flex items-center relative mx-auto hover:text-[#F58C1F] group">
+          <a href="activities" class="block text-black hover:text-[#F58C1F]">ACTIVITIES</a>
+        </div>
+        <div class="flex items-center relative mx-auto hover:text-[#F58C1F] group">
+          <a href="contact" class="block text-black hover:text-[#F58C1F]">CONTACT</a>
+        </div>
+
+        <div class="flex items-center space-x-4 px-3 py-2">
+          <img class="h-6" src="../public/phoneicon.png" />
+          <img class="h-6" src="../public/mailicon.png" />
+        </div>
+
+        <div class="flex mx-auto justify-center flex-col space-y-2">
 </div>
 
 
+        <button
+          class="w-full py-3 Aileron font-bold px-8 bg-[#F58C1F] text-white rounded-3xl hover:bg-white hover:text-[#F58C1F] hover:underline hover:underline-offset-4 focus:outline-none focus:ring focus:ring-[#F58C1F] focus:ring-opacity-50"
+        >
+          BOOK NOW
+        </button>
+      </div>
+    </div>
+  </div>
 </template>
+
+
+
+
+
+
+
 
 
 
