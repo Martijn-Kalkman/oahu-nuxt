@@ -21,18 +21,63 @@
           </h2>
           <h3 class="Bebas text-xl text-center mb-12 text-white">Arizona half day city, Arizona/Missouri, Full day</h3>
           <div class="lg:w-96 w-48 mb-16 mx-auto">
-          <a
-              class="text-center flex justify-center border border-[#F58C1F] border-2 bg-[#F58C1F] px-8 py-2 rounded-3xl text-white lg:text-lg text-sm font-semibold hover:bg-white hover:border-[#F58C1F] hover:text-[#F58C1F]"
-              href=""
-          >BOOK PEARL HARBOR TOURS
-          </a>
+            <a
+                class="text-center flex justify-center border border-[#F58C1F] border-2 bg-[#F58C1F] px-8 py-2 rounded-3xl text-white lg:text-lg text-sm font-semibold hover:bg-white hover:border-[#F58C1F] hover:text-[#F58C1F]"
+                href=""
+            >BOOK PEARL HARBOR TOURS
+            </a>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <!--  Section swiper-->
+  <section>
 
-
+    <div
+        data-aos="fade-right"
+        data-aos-duration="1500"
+        class="container mx-auto"
+    >
+      <h2
+          class="mt-20 Bebas text-7xl text-center lg:text-left font-medium mb-8"
+      >
+        There Is Nothing Like Pearl Harbor, O’ahu
+      </h2>
+      <p class="Montserratreg mt-4 leading-[3]">Commemorate the events of December 7th, 1941, by paying a visit to the historical Pearl Harbor National Monument. Nearly 2 million visitors per year visit the site of the World War II attacks President FDR famously referred to as “…a date which will live in infamy.” See footage and photos capturing the tragedy of this remarkable and humbling day. The Axis attack changed America and the world forever. After the devastating losses of the Pacific Fleet at Pearl Harbor, learn about how the United States rallied together and mobilized the industrial might of America and its citizens.</p>
+     <div class="grid-cols-2">
+      <div class="col-span-1">
+      <video src="/oahutoursvideo.mp4" autoplay class="w-1/2"></video>
+      <swiper
+          :spaceBetween="30"
+          :pagination="{
+                clickable: true,
+              }"
+          :modules="modules"
+          class="mySwiper custom-pagination w-[360px] h-[390px]"
+      >
+        <swiper-slide class="px-6"
+        ><img src="/aboutimg.png"
+        /></swiper-slide>
+        <swiper-slide class="px-6">Slide 2 </swiper-slide
+        ><swiper-slide class="px-6">Slide 3</swiper-slide>
+        <swiper-slide class="px-6">Slide 4</swiper-slide>
+      </swiper>
+     </div>
+      <div class="col-span-1">
+      <Card
+          title="CLASSIC SEATING"
+          image="/classicseating.jpg"
+          description="Join our ʻOhana for an exciting evening under the stars as we take you on a voyage across Ka Moana (the ocean). Witness world-class entertainment at the best luau on Oahu, that begins and ends with fire!"
+          price="$129.00"
+          duration="2 Hours 15 Minutes"
+          foodProvided="Food Provided"
+          bookingLink="https://fareharbor.com/embeds/book/thetourconsultants/items/559776/calendar/2024/07/?flow=no&full-items=yes"
+      />
+      </div>
+     </div>
+    </div>
+  </section>
   <!--  Section cards-->
   <section>
     <div class="bg-[#EBE9E2]">
@@ -133,20 +178,29 @@
   </section>
 </template>
 <script>
-import { ref, onMounted, onUnmounted } from "vue";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import { onMounted } from "vue";
+import Card from "../components/Card.vue";
 import AOS from "aos";
-import Card from "../components/Card.vue"; // Adjust the import path as necessary
+import {Swiper, SwiperSlide} from "swiper/vue";
+import {Pagination} from "swiper/modules"; // Adjust the import path as necessary
 
 export default {
   components: {
     Card,
+    Swiper,
+    SwiperSlide,
   },
   setup() {
     onMounted(() => {
       AOS.init();
     });
 
-    return {};
+    return {
+      modules: [Pagination],
+    };
   },
 };
 </script>
