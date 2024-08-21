@@ -45,9 +45,9 @@
         There Is Nothing Like Pearl Harbor, O’ahu
       </h2>
       <p class="Montserratreg mt-4 leading-[3]">Commemorate the events of December 7th, 1941, by paying a visit to the historical Pearl Harbor National Monument. Nearly 2 million visitors per year visit the site of the World War II attacks President FDR famously referred to as “…a date which will live in infamy.” See footage and photos capturing the tragedy of this remarkable and humbling day. The Axis attack changed America and the world forever. After the devastating losses of the Pacific Fleet at Pearl Harbor, learn about how the United States rallied together and mobilized the industrial might of America and its citizens.</p>
-     <div class="grid-cols-2">
-      <div class="col-span-1">
-      <video src="/oahutoursvideo.mp4" autoplay class="w-1/2"></video>
+     <div class="grid-cols-2 flex">
+      <div class="col-span-1 w-full">
+      <video src="/oahutoursvideo.mp4" autoplay class="mb-6"></video>
       <swiper
           :spaceBetween="30"
           :pagination="{
@@ -64,7 +64,8 @@
         <swiper-slide class="px-6">Slide 4</swiper-slide>
       </swiper>
      </div>
-      <div class="col-span-1">
+      <div class="col-span-1 w-full justify-center">
+        <div class="">
       <Card
           title="CLASSIC SEATING"
           image="/classicseating.jpg"
@@ -74,6 +75,7 @@
           foodProvided="Food Provided"
           bookingLink="https://fareharbor.com/embeds/book/thetourconsultants/items/559776/calendar/2024/07/?flow=no&full-items=yes"
       />
+        </div>
       </div>
      </div>
     </div>
