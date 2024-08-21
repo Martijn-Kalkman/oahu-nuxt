@@ -30,7 +30,7 @@
     <div class="hidden md:flex items-center space-x-6 md:ml-auto">
       <div class="flex items-center relative hover:text-[#FFDB00] group">
         <img src="/yellow.svg" alt="Logo" class="ml-2 h-8" />
-        <a href="activities" class="relative z-10">OHAU</a>
+        <a href="activities" class="relative z-10">OAHU</a>
         <span class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px] h-1.5 bg-[#FFDB00] transition-all duration-200 scale-x-0 group-hover:scale-x-100"></span>
       </div>
 
