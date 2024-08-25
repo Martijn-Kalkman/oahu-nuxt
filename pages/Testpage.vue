@@ -31,15 +31,14 @@
         <p class="text-center">
           {{ headerSubTitle }}
         </p>
-        <p class="Montserratreg mt-4 leading-[3]">
+        <p class="Montserratreg mt-4 leading-[3] mx-6">
           {{ text }}
         </p>
 
-        <div class="grid-cols-2 flex">
-          <div class="col-span-1 w-full">
+          <div class="flex flex-col xl:flex-row gap-8">
+          <div class="w-full lg:h-[900px] md:h-[600px] h-[400px]">
             <iframe
-              class="w-full"
-              height="78%"
+              class="w-full h-2/3 mb-4"
               :src="video"
               frameborder="0"
             ></iframe>
@@ -54,7 +53,7 @@
               }"
               :loop="true"
               :modules="modules"
-              class="mySwiper h-[200px] w-[800px]"
+              class="mySwiper h-[200px] lg:w-[800px] md:w-[650px] w-[300px]"
             >
               <swiper-slide
                 class="relative transform transition-all duration-300 scale-90 swiper-slide-prev-next"
@@ -94,51 +93,103 @@
               </swiper-slide>
             </swiper>
           </div>
-          <div class="col-span-1 w-full justify-center">
-            <div class="">
-              <Card
-                title="CLASSIC SEATING"
-                image="/classicseating.jpg"
-                description="Join our ʻOhana for an exciting evening under the stars as we take you on a voyage across Ka Moana (the ocean). Witness world-class entertainment at the best luau on Oahu, that begins and ends with fire!"
-                price="$129.00"
-                duration="2 Hours 15 Minutes"
-                foodProvided="Food Provided"
-                bookingLink="https://fareharbor.com/embeds/book/thetourconsultants/items/559776/calendar/2024/07/?flow=no&full-items=yes"
-              />
+          <div class="w-full justify-center">
+            <div class="py-10 container mx-auto">
+                <div
+                    v-for="(card,index) in cards.slice(0, 1)"
+                    :key="card.slug"
+                    class="bg-white shadow-xl"
+                >
+                  <div
+                      :style="{ backgroundImage: `url(${card.headerImage})` }"
+                      class="hover:scale-105 duration-500 overflow-hidden relative bg-cover bg-center bg-no-repeat w-full h-96 flex justify-center items-center overflow-hidden"
+                  >
+
+                    <!-- Overlay -->
+                    <div class="absolute inset-0 bg-black opacity-50"></div>
+
+                    <!-- Content -->
+                    <h3 class="Bebas absolute bottom-4 left-4 text-white text-3xl">
+                      {{ card.headerTitle }}
+                    </h3>
+                  </div>
+                  <div class="p-6 Montserratreg">
+                    <h4 class="mb-4 h-12 overflow-y-hidden">{{ card.headerSubTitle }}</h4>
+                    <p class="h-24">{{ card.text }}</p>
+                    <hr class="h-px my-4 bg-gray-200 border-0 dark:bg-black ">
+                    <div class="grid grid-cols-12">
+                      <div class="col-span-6">
+                        <p class="line-through decoration-red-500 decoration-2 text-xl">${{ card.price }}</p>
+                        <p class="text-xs">Now from</p>
+                        <p class="text-4xl text-[#F58C1F]">${{discountedPrice[index]}}</p>
+                      </div>
+                      <div class="col-span-6">
+                        <div class="">
+                          <button
+                              class=" w-[150px] text-center border border-[#F58C1F] bg-[#F58C1F] px-4 py-2 rounded-3xl text-white text-l font-semibold hover:bg-white hover:text-[#F58C1F] mb-4"
+                          > <NuxtLink to="{{ card.slug }}">
+                            BOOK NOW </NuxtLink>
+                          </button>
+                        </div>
+                        <div class="Aileron font-bold ml-4">
+                          <a href="tel:8085623222" class="flex flex-row gap-4">
+                            <img draggable="false" src="/phoneblack.png" alt="phone icon" />(808) 562-3222</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
         </div>
       </div>
+
     </section>
 
     <!-- /sharon -->
 
     <div class="py-10 container mx-auto">
-      <div class="flex flex-row flex-wrap w-full justify-between gap-10">
+      <div class="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 flex-wrap w-full justify-between gap-6 mx-auto">
         <div
-          v-for="card in cards"
+          v-for="(card,index) in cards"
           :key="card.slug"
-          class="w-[30%] bg-white shadow-xl"
+          class="w-full bg-white shadow-xl col-span-1"
         >
   <div
     :style="{ backgroundImage: `url(${card.headerImage})` }"
-    class="relative bg-cover bg-center bg-no-repeat w-full h-96 flex justify-center items-center overflow-hidden"
+    class="hover:scale-105 duration-500 overflow-hidden relative bg-cover bg-center bg-no-repeat w-full h-96 flex justify-center items-center overflow-hidden"
   >
 
             <!-- Overlay -->
             <div class="absolute inset-0 bg-black opacity-50"></div>
 
             <!-- Content -->
-            <h3 class="absolute bottom-4 left-4 text-white text-xl">
+            <h3 class="Bebas absolute bottom-4 left-4 text-white text-3xl">
               {{ card.headerTitle }}
             </h3>
           </div>
-          <div class="p-6">
-            <h4 class="mb-4">{{ card.headerSubTitle }}</h4>
-            <p>{{ card.text }}</p>
+          <div class="p-6 Montserratreg">
+            <h4 class="mb-4 h-12 overflow-y-hidden">{{ card.headerSubTitle }}</h4>
+            <p class="h-24">{{ card.text }}</p>
             <hr class="h-px my-4 bg-gray-200 border-0 dark:bg-black ">
-            <p>Price: ${{ card.price }}</p>
-            <p>Discount: {{ card.discountPercentage }}</p>
+            <div class="grid grid-cols-12">
+              <div class="col-span-6">
+            <p class="line-through decoration-red-500 decoration-2 text-xl">${{ card.price }}</p>
+                <p class="text-xs">Now from</p>
+                <p class="text-4xl text-[#F58C1F]">${{discountedPrice[index]}}</p>
+              </div>
+              <div class="col-span-6">
+            <div class="">
+              <button
+                  class=" w-[150px] text-center border border-[#F58C1F] bg-[#F58C1F] px-4 py-2 rounded-3xl text-white text-l font-semibold hover:bg-white hover:text-[#F58C1F] mb-4"
+              > <NuxtLink to="{{ card.slug }}">
+                BOOK NOW </NuxtLink>
+              </button>
+            </div>
+                  <div class="Aileron font-bold ml-4">
+                    <a href="tel:8085623222" class="flex flex-row gap-4">
+                      <img draggable="false" src="/phoneblack.png" alt="phone icon" />(808) 562-3222</a></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -154,7 +205,9 @@ import AOS from "aos";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Pagination } from "swiper/modules";
 
+// let discountedPrice = price * (discountPercentage/100);
 export default {
+
   components: {
     Card,
     Swiper,
@@ -179,6 +232,7 @@ export default {
       video: "",
       slug: "",
       cards: [],
+      discountedPrice: []
     };
   },
   mounted() {
@@ -196,10 +250,19 @@ export default {
         this.video = category.video;
         this.title = category.title;
         this.text = category.text;
+
+        this.cards.forEach((card, index) => {
+          const discount = (card.price * card.discountPercentage) / 100;
+          console.log("price:" + card.discountPercentage)
+          this.discountedPrice[index] = (card.price - discount).toFixed(0);
+        });
       })
       .catch((error) => console.error("Error fetching data:", error));
   },
+
 };
+
+
 </script>
 
 <style scoped>
