@@ -17,7 +17,7 @@
       <h1 class="lg:w-3/4 Bebas text-5xl lg:mb-0 mb-12">DISCOVER OAHU WITH US - EXPERIENCE THE MAGIC TODAY!</h1>
       <router-link
           class="lg:w-auto w-48 border border-[#F58C1F] border-2 bg-[#F58C1F] px-8 py-2 rounded-3xl text-white text-xl font-semibold hover:bg-white hover:border-[#F58C1F] hover:text-[#F58C1F]"
-          to="">BOOK NOW
+          >BOOK NOW
       </router-link>
     </div>
   </section>
