@@ -156,7 +156,7 @@
         >
   <div
     :style="{ backgroundImage: `url(${card.headerImage})` }"
-    class="hover:scale-105 duration-500 overflow-hidden relative bg-cover bg-center bg-no-repeat w-full h-96 flex justify-center items-center overflow-hidden"
+    class="hover:scale-105 duration-500 relative bg-cover bg-center bg-no-repeat w-full h-96 flex justify-center items-center overflow-hidden"
   >
 
             <!-- Overlay -->
@@ -252,8 +252,8 @@ export default {
         this.text = category.text;
 
         this.cards.forEach((card, index) => {
-          const discount = (card.price * card.discountPercentage) / 100;
-          console.log("price:" + card.discountPercentage)
+          const discount = (card.price * parseFloat(card.discountPercentage)) / 100;
+          console.log("price:" + parseFloat(card.discountPercentage))
           this.discountedPrice[index] = (card.price - discount).toFixed(0);
         });
       })
