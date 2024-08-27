@@ -127,8 +127,8 @@
                         <div class="">
                           <button
                               class=" w-[150px] text-center border border-[#F58C1F] bg-[#F58C1F] px-4 py-2 rounded-3xl text-white text-l font-semibold hover:bg-white hover:text-[#F58C1F] mb-4"
-                          > <NuxtLink to="{{ card.slug }}">
-                            BOOK NOW </NuxtLink>
+                          > <a >
+                            BOOK NOW </a>
                           </button>
                         </div>
                         <div class="Aileron font-bold ml-4">
@@ -181,7 +181,7 @@
             <div class="">
               <button
                   class=" w-[150px] text-center border border-[#F58C1F] bg-[#F58C1F] px-4 py-2 rounded-3xl text-white text-l font-semibold hover:bg-white hover:text-[#F58C1F] mb-4"
-              > <NuxtLink to="{{ card.slug }}">
+              > <NuxtLink >
                 BOOK NOW </NuxtLink>
               </button>
             </div>
