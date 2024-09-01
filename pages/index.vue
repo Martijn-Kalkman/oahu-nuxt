@@ -31,7 +31,7 @@
         packaging blending thrilling adventures and enriching cultural insights - <span
             class="font-bold">let's explore together</span>
       </p>
-      <router-link
+      <router-link to="/"
           class="invisible lg:visible border border-[#F58C1F] border-4 lg:mr-6 bg-[#F58C1F] lg:px-8 lg:py-2 rounded-3xl text-white text-xl font-semibold hover:bg-white hover:border-white hover:text-[#F58C1F]">
         BOOK NOW
       </router-link>
