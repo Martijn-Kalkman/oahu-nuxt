@@ -1,6 +1,6 @@
 <template>
   <!--  Section we go beyond-->
-  <section class="flex flex-col justify-center items-center relative">
+  <section class=" flex-col justify-center items-center relative hidden md:flex">
     <div class="absolute z-20 bottom-0"><img class="h-[700px] w-screen object-cover lg:object-fill object-left "
         src="/palmtrees.png" alt="">
     </div>
@@ -37,7 +37,7 @@
     </div>
 
   </section>
-  <section class="relative h-[70vh]">
+  <section class="relative h-[170vh] md:h-[70vh]">
   <!-- Background image container -->
   <div class="absolute top-0 left-0 w-full h-full">
     <!-- Dark overlay with #3D2A2A color and semi-transparency -->
@@ -47,37 +47,38 @@
 
   <!-- Container for blocks, centered using Flexbox -->
   <div class="absolute inset-0 flex items-center justify-center">
-    <div class="grid grid-cols-5 gap-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
       <!-- Individual blocks -->
-      <div class="relative w-64 h-64">
-        <img class="w-full h-full object-cover rounded-2xl" src="/image.png" alt="">
+      <div class="relative w-64 h-64 md:w-48 md:h-48 lg:w-44 lg:h-44">
+        <img class="w-full h-full object-cover rounded-2xl" src="/image-1.png" alt="">
         <div class="absolute bottom-2 left-2 bg-white text-black font-bold p-2 rounded-2xl">
-          LUAS
+          LUAUS
         </div>
       </div>
 
-      <div class="relative w-64 h-64">
-        <img class="w-full h-full object-cover rounded-2xl" src="/image-1.png" alt="">
+      <div class="relative w-64 h-64 md:w-48 md:h-48 lg:w-44 lg:h-44">
+        <img class="w-full h-full object-cover rounded-2xl" src="/image.png" alt="">
+
         <div class="absolute bottom-2 left-2 bg-white text-black font-bold p-2 rounded-2xl">
           ISLAND TOURS
         </div>
       </div>
 
-      <div class="relative w-64 h-64">
-        <img class="w-full h-full object-cover rounded-2xl" src="/photo_2024-09-10_13-34-52.jpg" alt="">
+      <div class="relative w-64 h-64 md:w-48 md:h-48 lg:w-44 lg:h-44">
+        <img class="w-full h-full object-cover rounded-2xl" src="/photo_2024-09-10_13-47-42.jpg" alt="">
         <div class="absolute bottom-2 left-2 bg-white text-black font-bold p-2 rounded-2xl">
           Pearl Harbor Tours
         </div>
       </div>
 
-      <div class="relative w-64 h-64">
-        <img class="w-full h-full object-cover rounded-2xl" src="/photo_2024-09-10_13-47-42.jpg" alt="">
+      <div class="relative w-64 h-64 md:w-48 md:h-48 lg:w-44 lg:h-44">
+        <img class="w-full h-full object-cover rounded-2xl" src="/photo_2024-09-13_09-29-15.jpg" alt="">
         <div class="absolute bottom-2 left-2 bg-white text-black font-bold p-2 rounded-2xl">
           Ocean Adventures
         </div>
       </div>
 
-      <div class="relative w-64 h-64">
+      <div class="relative w-64 h-64 md:w-48 md:h-48 lg:w-44 lg:h-44">
         <img class="w-full h-full object-cover rounded-2xl" src="/photo_2024-09-10_13-32-12.jpg" alt="">
         <div class="absolute bottom-2 left-2 bg-white text-black font-bold p-2 rounded-2xl">
           Helicopter Tours

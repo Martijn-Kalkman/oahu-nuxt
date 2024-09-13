@@ -1,10 +1,10 @@
 <template>
-  <nav class="p-4 px-8 xl:px-32 flex items-center justify-between absolute z-40 w-full text-white mobile-nav">
+  <nav class="p-4 px-2 xl:px-32 flex items-center justify-between absolute z-40 w-full text-white mobile-nav">
     <button
       class="md:hidden flex items-center px-3 py-2 text-black rounded"
       @click="toggleMenu"
     >
-      <svg v-if="!isMenuOpen" class="fill-current h-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+      <svg v-if="!isMenuOpen" class="fill-current h-8" viewBox="0 -5 20 20" xmlns="http://www.w3.org/2000/svg">
         <title>Menu</title>
         <path d="M0 3h20v2H0zM0 7h20v2H0zM0 11h20v2H0z" />
       </svg>
@@ -16,16 +16,21 @@
 
     <div class="flex items-center space-x-4">
       <a href="/"><img src="/logooahu.png" alt="Logo" class="hidden md:block" /></a>
+      <img src="/logooahu.png" alt="Logo" class="block md:hidden h-16" />
+    </div>
+
+    <div class="flex items-center space-x-4 invisible md:hidden">
+      <a href="/"><img src="/logooahu.png" alt="Logo" class="hidden md:block" /></a>
       <img src="/logooahu.png" alt="Logo" class="block md:hidden h-8" />
     </div>
 
-    <!-- Centered Middle Links Section for Desktop -->
-    <div class="hidden md:flex justify-center flex-grow space-x-8">
+
+    <!-- <div class="hidden md:flex justify-center flex-grow space-x-8">
       <a href="about" class="block text-white hover:text-[#F58C1F]">ABOUT</a>
       <a href="tours" class="block text-white hover:text-[#F58C1F]">TOURS</a>
       <a href="activities" class="block text-white hover:text-[#F58C1F]">ACTIVITIES</a>
       <a href="contact" class="block text-white hover:text-[#F58C1F]">CONTACT</a>
-    </div>
+    </div> -->
 
     <div class="hidden md:flex items-center space-x-6 md:ml-auto">
       <div class="flex items-center relative hover:text-[#FFDB00] group">
@@ -51,6 +56,9 @@
         <a href="#" class="relative z-10">KAUAI</a>
         <span class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px] h-1.5 bg-[#A84BCA] transition-all duration-200 scale-x-0 group-hover:scale-x-100"></span>
       </div>
+      <a href="about" class="block text-white hover:text-[#F58C1F]">ABOUT</a>
+      <a href="contact" class="block text-white hover:text-[#F58C1F]">CONTACT</a>
+
     </div>
 
     <div class="hidden md:flex items-center space-x-4">
@@ -58,7 +66,7 @@
       <img class="mr-4 h-8" src="../public/mailicon.png" />
       <a href="activities">
         <button
-          class="py-3 Aileron font-bold px-8 bg-[#F58C1F] text-white rounded-3xl hover:bg-white hover:text-[#F58C1F] hover:underline hover:underline-offset-4 focus:outline-none focus:ring focus:ring-[#F58C1F] focus:ring-opacity-50"
+          class="py-3 Aileron font-bold px-3 bg-[#F58C1F] text-white rounded-3xl hover:bg-white hover:text-[#F58C1F] hover:underline hover:underline-offset-4 focus:outline-none focus:ring focus:ring-[#F58C1F] focus:ring-opacity-50"
         >
           BOOK NOW
         </button>
@@ -75,7 +83,6 @@
         </svg>
       </button>
       
-      <!-- Centered Middle Links Section for Mobile -->
       <div class="mt-16 flex flex-col space-y-4">
         <div class="flex items-center relative hover:text-[#F58C1F] group">
           <img src="/yellow.svg" alt="Logo" class="h-8 mb-2" />
