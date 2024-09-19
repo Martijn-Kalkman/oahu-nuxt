@@ -35,28 +35,31 @@
     <div class="hidden md:flex items-center space-x-6 md:ml-auto">
       <div class="flex items-center relative hover:text-[#FFDB00] group">
         <img src="/yellow.svg" alt="Logo" class="ml-2 h-8" />
-        <a href="activities" class="relative z-10">OAHU</a>
+        <a href="activities" class="relative z-10 text-[#FFDB00]">OAHU</a>
         <span class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px] h-1.5 bg-[#FFDB00] transition-all duration-200 scale-x-0 group-hover:scale-x-100"></span>
       </div>
 
       <div class="flex items-center relative hover:text-[#FF53A7] group">
         <img src="/pink.svg" alt="Logo" class="mr-2 h-8" />
-        <a href="#" class="relative z-10">MAUI</a>
+        <a href="#" class="relative z-10 text-[#FF53A7]">MAUI</a>
         <span class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px] h-1.5 bg-[#FF53A7] transition-all duration-200 scale-x-0 group-hover:scale-x-100"></span>
       </div>
 
       <div class="flex items-center relative hover:text-[#FC3743] group">
         <img src="/red.svg" alt="Logo" class="mr-2 h-8" />
-        <a href="#" class="relative z-10">BIG ISLAND</a>
+        <a href="#" class="relative z-10 text-[#FC3743]">BIG ISLAND</a>
         <span class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px] h-1.5 bg-[#FC3743] transition-all duration-200 scale-x-0 group-hover:scale-x-100"></span>
       </div>
 
       <div class="flex items-center relative hover:text-[#A84BCA] group">
         <img src="/purple.svg" alt="Logo" class="mr-2 h-8" />
-        <a href="#" class="relative z-10">KAUAI</a>
+        <a href="#" class="relative z-10 text-[#A84BCA]">KAUAI</a>
         <span class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px] h-1.5 bg-[#A84BCA] transition-all duration-200 scale-x-0 group-hover:scale-x-100"></span>
       </div>
-      <a href="about" class="block text-white hover:text-[#F58C1F]">ABOUT</a>
+      <a href="about" class="block text-white hover:text-[#F58C1F]">ABOUT US</a>
+      <a href="" class="block text-white hover:text-[#F58C1F]">LARGE GROUPS</a>
+      <a href="" class="block text-white hover:text-[#F58C1F]">PRIVATE TOURS</a>
+      <a href="" class="block text-white hover:text-[#F58C1F]">TRAVEL CLUB</a>
       <a href="contact" class="block text-white hover:text-[#F58C1F]">CONTACT</a>
 
     </div>
@@ -86,32 +89,35 @@
       <div class="mt-16 flex flex-col space-y-4">
         <div class="flex items-center relative hover:text-[#F58C1F] group">
           <img src="/yellow.svg" alt="Logo" class="h-8 mb-2" />
-          <a href="activities" class="relative z-10">OAHU</a>
+          <a href="activities" class="relative z-10 text-[#FFDB00]">OAHU</a>
           <span class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px] h-1.5 bg-[#F58C1F] transition-all duration-200 scale-x-0 group-hover:scale-x-100"></span>
         </div>
         <div class="flex items-center relative hover:text-[#F58C1F] group">
           <img src="/pink.svg" alt="Logo" class="h-8 mb-2" />
-          <a href="#" class="relative z-10">MAUI</a>
+          <a href="#" class="relative z-10 text-[#FF53A7]">MAUI</a>
           <span class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px] h-1.5 bg-[#F58C1F] transition-all duration-200 scale-x-0 group-hover:scale-x-100"></span>
         </div>
         <div class="flex items-center relative hover:text-[#F58C1F] group">
           <img src="/red.svg" alt="Logo" class="h-8 mb-2" />
-          <a href="#" class="relative z-10">BIG ISLAND</a>
+          <a href="#" class="relative z-10 text-[#FC3743]">BIG ISLAND</a>
           <span class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px] h-1.5 bg-[#F58C1F] transition-all duration-200 scale-x-0 group-hover:scale-x-100"></span>
         </div>
         <div class="flex items-center relative hover:text-[#F58C1F] group">
           <img src="/purple.svg" alt="Logo" class="h-8 mb-" />
-          <a href="#" class="relative z-10">KAUKAI</a>
+          <a href="#" class="relative z-10 text-[#A84BCA]">KAUKAI</a>
           <span class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px] h-1.5 bg-[#F58C1F] transition-all duration-200 scale-x-0 group-hover:scale-x-100"></span>
         </div>
         <div class="flex items-center pt-8 mx-auto  relative hover:text-[#F58C1F] group">
-          <a href="about" class="block text-black hover:text-[#F58C1F]">ABOUT</a>
+          <a href="about" class="block text-black hover:text-[#F58C1F]">ABOUT US</a>
         </div>
         <div class="flex items-center relative mx-auto hover:text-[#F58C1F] group">
-          <a href="tours" class="block text-black hover:text-[#F58C1F]">TOURS</a>
+          <a href="" class="block text-black hover:text-[#F58C1F]">LARGE GROUPS</a>
         </div>
         <div class="flex items-center relative mx-auto hover:text-[#F58C1F] group">
-          <a href="activities" class="block text-black hover:text-[#F58C1F]">ACTIVITIES</a>
+          <a href="" class="block text-black hover:text-[#F58C1F]">PRIVATE TOURS</a>
+        </div>
+        <div class="flex items-center relative mx-auto hover:text-[#F58C1F] group">
+          <a href="" class="block text-black hover:text-[#F58C1F]">TRAVEL CLUB</a>
         </div>
         <div class="flex items-center relative mx-auto hover:text-[#F58C1F] group">
           <a href="contact" class="block text-black hover:text-[#F58C1F]">CONTACT</a>

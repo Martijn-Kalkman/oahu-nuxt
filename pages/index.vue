@@ -1,6 +1,6 @@
 <template>
   <!--  Section we go beyond-->
-  <section class=" flex-col justify-center items-center relative hidden md:flex">
+  <section class=" flex-col justify-center items-center relative  flex">
     <div class="absolute z-20 bottom-0"><img class="h-[700px] w-screen object-cover lg:object-fill object-left "
         src="/palmtrees.png" alt="">
     </div>
@@ -20,11 +20,16 @@
       <h1
         class="lg:w-1/2 mx-auto text-center bg-gradient-to-r from-[#FFFFFF] to-[#FFB905] bg-clip-text text-transparent text-[6em] lg:text-[130px] Bebas leading-none">
         WE GO BEYOND!</h1>
-      <p class="mt-8 mx-6 lg:mx-80 mb-14 text-white text-xl Montserrat leading-[2]">Unlock the ultimate Oahu experience
+      <!-- <p class="mt-8 mx-6 lg:mx-80 mb-14 text-white text-xl Montserrat leading-[2]">Unlock the ultimate Oahu experience
         with our
         diverse activity
         packaging blending thrilling adventures and enriching cultural insights - <span class="font-bold">let's explore
           together</span>
+      </p> -->
+            <p class="mt-8 mx-6 lg:mx-80 mb-14 text-white text-xl Montserrat leading-[2]">
+              Experienced team of local experts with over 40 years of combined experience. <br/>
+              We provide the best service, tours & activities at the best prices!
+              <span class="font-bold">let's explore together</span>
       </p>
       <router-link to="/"
         class="invisible lg:visible border border-[#F58C1F] border-4 lg:mr-6 bg-[#F58C1F] lg:px-8 lg:py-2 rounded-3xl text-white text-xl font-semibold hover:bg-white hover:border-white hover:text-[#F58C1F]">
@@ -37,16 +42,16 @@
     </div>
 
   </section>
-  <section class="relative h-[170vh] md:h-[70vh]">
+  <section class="relative h-[210vh] md:h-[70vh]">
   <!-- Background image container -->
   <div class="absolute top-0 left-0 w-full h-full">
     <!-- Dark overlay with #3D2A2A color and semi-transparency -->
     <div class="absolute inset-0 bg-[#080504] opacity-90"></div>
     <img src="/headerbackgroundImage.png" class="object-cover w-full h-full" alt="">
   </div>
-
   <!-- Container for blocks, centered using Flexbox -->
-  <div class="absolute inset-0 flex items-center justify-center">
+  <div class="absolute inset-0 flex flex-col items-center justify-center">
+    <h5 class="z-10 relative text-center font-bold text-5xl text-white mb-10 mt-0 md:mt-0">Choose your activity <br/> to get started </h5>
     <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
       <!-- Individual blocks -->
       <div class="relative w-64 h-64 md:w-48 md:h-48 lg:w-44 lg:h-44">
