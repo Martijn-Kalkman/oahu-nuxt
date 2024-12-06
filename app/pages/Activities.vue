@@ -134,7 +134,6 @@
   </section>
 </template>
 <script>
-import { ref, onMounted, onUnmounted } from 'vue';
 import AOS from 'aos';
 import Card from '~/app/components/Card.vue'; // Adjust the import path as necessary
 

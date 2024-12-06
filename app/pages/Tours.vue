@@ -95,7 +95,6 @@
   </section>
 </template>
 <script>
-import { onMounted } from 'vue';
 import AOS from 'aos';
 
 export default {

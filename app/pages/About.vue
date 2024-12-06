@@ -178,7 +178,6 @@ import 'swiper/css/pagination';
 
 // import required modules
 import { Pagination } from 'swiper/modules';
-import { onMounted } from 'vue';
 import AOS from 'aos';
 
 export default {

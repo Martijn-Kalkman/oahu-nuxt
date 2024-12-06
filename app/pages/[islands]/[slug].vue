@@ -190,10 +190,9 @@
 <script>
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { onMounted } from 'vue';
-import Card from '../components/Card.vue';
 import AOS from 'aos';
 import { Swiper, SwiperSlide } from 'swiper/vue';
+import Card from '~/components/Card.vue';
 import { Pagination } from 'swiper/modules';
 
 // let discountedPrice = price * (discountPercentage/100);

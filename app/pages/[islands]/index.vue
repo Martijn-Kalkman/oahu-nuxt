@@ -190,9 +190,8 @@
 <script>
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { onMounted } from 'vue';
-import Card from '../components/Card.vue';
 import AOS from 'aos';
+import Card from '~/components/Card.vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Pagination } from 'swiper/modules';
 

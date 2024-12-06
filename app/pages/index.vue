@@ -334,7 +334,6 @@ import './assets/main.css';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
-import { onMounted } from 'vue';
 import AOS from 'aos';
 
 import { Autoplay, Pagination, Navigation, EffectFade } from 'swiper/modules';
