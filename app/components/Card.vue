@@ -10,7 +10,9 @@
       <h2 class="text-white Bebas text-2xl">{{ title }}</h2>
     </div>
     <div>
-      <p class="h-[210px] Montserratreg text-sm md:mx-8 mx-2 mt-4 md:leading-[3] leading-[2.5] mb-4 text-center lg:text-left">
+      <p
+        class="h-[210px] Montserratreg text-sm md:mx-8 mx-2 mt-4 md:leading-[3] leading-[2.5] mb-4 text-center lg:text-left"
+      >
         {{ description }}
       </p>
       <div class="border-b-2 mx-8 border-black mb-4"></div>
@@ -18,7 +20,10 @@
     <div class="flex flex-col lg:flex-row">
       <div class="lg:w-1/2 flex flex-col lg:ml-8 mb-8">
         <ul class="lg:ml-4 Montserratreg text-xs lg:text-left text-center">
-          <li class="p-2"><span class="text-l font-bold">• </span><span class="font-bold text-l">{{ price }}</span> per person</li>
+          <li class="p-2">
+            <span class="text-l font-bold">• </span
+            ><span class="font-bold text-l">{{ price }}</span> per person
+          </li>
           <li class="p-2"><span class="text-l font-bold">• </span>{{ duration }}</li>
           <li class="p-2"><span class="text-l font-bold">• </span>{{ foodProvided }}</li>
         </ul>
@@ -37,11 +42,7 @@
       </div>
     </div>
 
-    <modal
-      v-if="isModalOpen"
-      @close="closeModal"
-      :iframeSrc="bookingLink"
-    />
+    <modal v-if="isModalOpen" @close="closeModal" :iframeSrc="bookingLink" />
   </div>
 </template>
 
@@ -57,11 +58,11 @@ export default {
     price: String,
     duration: String,
     foodProvided: String,
-    bookingLink: String
+    bookingLink: String,
   },
   data() {
     return {
-      isModalOpen: false
+      isModalOpen: false,
     };
   },
   methods: {
@@ -70,7 +71,7 @@ export default {
     },
     closeModal() {
       this.isModalOpen = false;
-    }
-  }
+    },
+  },
 };
 </script>

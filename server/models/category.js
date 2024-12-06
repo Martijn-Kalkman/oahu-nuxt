@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
 const CategorySchema = new mongoose.Schema({
   slug: { type: String },
@@ -26,6 +26,6 @@ const CategorySchema = new mongoose.Schema({
   ],
 });
 
-const Category = mongoose.model("Category", CategorySchema);
+const Category = mongoose.model('Category', CategorySchema);
 
 export default Category;

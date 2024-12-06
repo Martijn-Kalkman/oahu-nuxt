@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'BebasNue';
+  src: url('fonts/BebasNeue-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Aileron';
+  src: url('fonts/Aileron-Regular.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/Montserrat-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-regular';
+  src: url('fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+.Bebas {
+  font-family: 'BebasNue', sans-serif;
+}
+
+.Aileron {
+  font-family: 'Aileron', sans-serif;
+}
+
+.Montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.Montserratreg {
+  font-family: 'Montserrat-regular', sans-serif;
+}
+
+.custom-pagination .swiper-pagination-bullet {
+  background-color: #d9d9d9; /* Set non-active bullets to grey */
+  width: 12px;
+  height: 12px;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+  background-color: #f58c1f; /* Set active bullet to orange */
+}
+
+.custom-background1 {
+  background-image: url('../../../public/seabackground.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.custom-background2 {
+  background-image: url('../../../public/roadbackground.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.custom-background3 {
+  background-image: url('../../../public/surfboardbackground.png');
+  background-size: cover;
+  background-position: center;
+}
