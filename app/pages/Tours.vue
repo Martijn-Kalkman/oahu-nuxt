@@ -94,14 +94,9 @@
     </div>
   </section>
 </template>
-<script>
+
+<script setup lang="ts">
 import AOS from 'aos';
 
-export default {
-  setup() {
-    onMounted(() => {
-      AOS.init();
-    });
-  },
-};
+AOS.init();
 </script>
