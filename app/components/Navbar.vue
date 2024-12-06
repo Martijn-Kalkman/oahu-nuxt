@@ -1,10 +1,14 @@
 <template>
-  <nav class="p-4 px-2 xl:px-32 flex items-center justify-between absolute z-40 w-full text-white mobile-nav">
-    <button
-      class="md:hidden flex items-center px-3 py-2 text-black rounded"
-      @click="toggleMenu"
-    >
-      <svg v-if="!isMenuOpen" class="fill-current h-8" viewBox="0 -5 20 20" xmlns="http://www.w3.org/2000/svg">
+  <nav
+    class="p-4 px-2 xl:px-32 flex items-center justify-between absolute z-40 w-full text-white mobile-nav"
+  >
+    <button class="md:hidden flex items-center px-3 py-2 text-black rounded" @click="toggleMenu">
+      <svg
+        v-if="!isMenuOpen"
+        class="fill-current h-8"
+        viewBox="0 -5 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <title>Menu</title>
         <path d="M0 3h20v2H0zM0 7h20v2H0zM0 11h20v2H0z" />
       </svg>
@@ -15,15 +19,14 @@
     </button>
 
     <div class="flex items-center space-x-4">
-      <a href="/"><img src="/logooahu.png" alt="Logo" class="hidden md:block" /></a>
+      <a href="/public"><img src="/logooahu.png" alt="Logo" class="hidden md:block" /></a>
       <img src="/logooahu.png" alt="Logo" class="block md:hidden h-16" />
     </div>
 
     <div class="flex items-center space-x-4 invisible md:hidden">
-      <a href="/"><img src="/logooahu.png" alt="Logo" class="hidden md:block" /></a>
+      <a href="/public"><img src="/logooahu.png" alt="Logo" class="hidden md:block" /></a>
       <img src="/logooahu.png" alt="Logo" class="block md:hidden h-8" />
     </div>
-
 
     <!-- <div class="hidden md:flex justify-center flex-grow space-x-8">
       <a href="about" class="block text-white hover:text-[#F58C1F]">ABOUT</a>
@@ -36,37 +39,44 @@
       <div class="flex items-center relative hover:text-[#FFDB00] group">
         <img src="/yellow.svg" alt="Logo" class="ml-2 h-8" />
         <a href="activities" class="relative z-10 text-[#FFDB00]">OAHU</a>
-        <span class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px] h-1.5 bg-[#FFDB00] transition-all duration-200 scale-x-0 group-hover:scale-x-100"></span>
+        <span
+          class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px] h-1.5 bg-[#FFDB00] transition-all duration-200 scale-x-0 group-hover:scale-x-100"
+        ></span>
       </div>
 
       <div class="flex items-center relative hover:text-[#FF53A7] group">
         <img src="/pink.svg" alt="Logo" class="mr-2 h-8" />
         <a href="#" class="relative z-10 text-[#FF53A7]">MAUI</a>
-        <span class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px] h-1.5 bg-[#FF53A7] transition-all duration-200 scale-x-0 group-hover:scale-x-100"></span>
+        <span
+          class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px] h-1.5 bg-[#FF53A7] transition-all duration-200 scale-x-0 group-hover:scale-x-100"
+        ></span>
       </div>
 
       <div class="flex items-center relative hover:text-[#FC3743] group">
         <img src="/red.svg" alt="Logo" class="mr-2 h-8" />
         <a href="#" class="relative z-10 text-[#FC3743]">BIG ISLAND</a>
-        <span class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px] h-1.5 bg-[#FC3743] transition-all duration-200 scale-x-0 group-hover:scale-x-100"></span>
+        <span
+          class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px] h-1.5 bg-[#FC3743] transition-all duration-200 scale-x-0 group-hover:scale-x-100"
+        ></span>
       </div>
 
       <div class="flex items-center relative hover:text-[#A84BCA] group">
         <img src="/purple.svg" alt="Logo" class="mr-2 h-8" />
         <a href="#" class="relative z-10 text-[#A84BCA]">KAUAI</a>
-        <span class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px] h-1.5 bg-[#A84BCA] transition-all duration-200 scale-x-0 group-hover:scale-x-100"></span>
+        <span
+          class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px] h-1.5 bg-[#A84BCA] transition-all duration-200 scale-x-0 group-hover:scale-x-100"
+        ></span>
       </div>
       <a href="about" class="block text-white hover:text-[#F58C1F]">ABOUT US</a>
       <a href="" class="block text-white hover:text-[#F58C1F]">LARGE GROUPS</a>
       <a href="" class="block text-white hover:text-[#F58C1F]">PRIVATE TOURS</a>
       <a href="" class="block text-white hover:text-[#F58C1F]">TRAVEL CLUB</a>
       <a href="contact" class="block text-white hover:text-[#F58C1F]">CONTACT</a>
-
     </div>
 
     <div class="hidden md:flex items-center space-x-4">
-      <img class="mr-4 h-8 ml-6" src="../public/phoneicon.png" />
-      <img class="mr-4 h-8" src="../public/mailicon.png" />
+      <img class="mr-4 h-8 ml-6" src="../../public/phoneicon.png" />
+      <img class="mr-4 h-8" src="../../public/mailicon.png" />
       <a href="activities">
         <button
           class="py-3 Aileron font-bold px-3 bg-[#F58C1F] text-white rounded-3xl hover:bg-white hover:text-[#F58C1F] hover:underline hover:underline-offset-4 focus:outline-none focus:ring focus:ring-[#F58C1F] focus:ring-opacity-50"
@@ -77,37 +87,59 @@
     </div>
   </nav>
 
-  <div :class="{'translate-x-0': isMenuOpen, '-translate-x-full': !isMenuOpen}" 
-       class="fixed inset-0 bg-white z-50 w-64 text-black transform transition-transform duration-300 ease-in-out md:hidden">
+  <div
+    :class="{ 'translate-x-0': isMenuOpen, '-translate-x-full': !isMenuOpen }"
+    class="fixed inset-0 bg-white z-50 w-64 text-black transform transition-transform duration-300 ease-in-out md:hidden"
+  >
     <div class="px-2 pt-2 pb-3">
       <button class="absolute top-0 right-0 m-4" @click="toggleMenu">
-        <svg v-if="isMenuOpen" class="h-6 w-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        <svg
+          v-if="isMenuOpen"
+          class="h-6 w-6 text-black"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          ></path>
         </svg>
       </button>
-      
+
       <div class="mt-16 flex flex-col space-y-4">
         <div class="flex items-center relative hover:text-[#F58C1F] group">
           <img src="/yellow.svg" alt="Logo" class="h-8 mb-2" />
           <a href="activities" class="relative z-10 text-[#FFDB00]">OAHU</a>
-          <span class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px] h-1.5 bg-[#F58C1F] transition-all duration-200 scale-x-0 group-hover:scale-x-100"></span>
+          <span
+            class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px] h-1.5 bg-[#F58C1F] transition-all duration-200 scale-x-0 group-hover:scale-x-100"
+          ></span>
         </div>
         <div class="flex items-center relative hover:text-[#F58C1F] group">
           <img src="/pink.svg" alt="Logo" class="h-8 mb-2" />
           <a href="#" class="relative z-10 text-[#FF53A7]">MAUI</a>
-          <span class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px] h-1.5 bg-[#F58C1F] transition-all duration-200 scale-x-0 group-hover:scale-x-100"></span>
+          <span
+            class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px] h-1.5 bg-[#F58C1F] transition-all duration-200 scale-x-0 group-hover:scale-x-100"
+          ></span>
         </div>
         <div class="flex items-center relative hover:text-[#F58C1F] group">
           <img src="/red.svg" alt="Logo" class="h-8 mb-2" />
           <a href="#" class="relative z-10 text-[#FC3743]">BIG ISLAND</a>
-          <span class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px] h-1.5 bg-[#F58C1F] transition-all duration-200 scale-x-0 group-hover:scale-x-100"></span>
+          <span
+            class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px] h-1.5 bg-[#F58C1F] transition-all duration-200 scale-x-0 group-hover:scale-x-100"
+          ></span>
         </div>
         <div class="flex items-center relative hover:text-[#F58C1F] group">
           <img src="/purple.svg" alt="Logo" class="h-8 mb-" />
           <a href="#" class="relative z-10 text-[#A84BCA]">KAUKAI</a>
-          <span class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px] h-1.5 bg-[#F58C1F] transition-all duration-200 scale-x-0 group-hover:scale-x-100"></span>
+          <span
+            class="absolute left-0 right-0 bottom-0 mt-0 mb-[-10px] h-1.5 bg-[#F58C1F] transition-all duration-200 scale-x-0 group-hover:scale-x-100"
+          ></span>
         </div>
-        <div class="flex items-center pt-8 mx-auto  relative hover:text-[#F58C1F] group">
+        <div class="flex items-center pt-8 mx-auto relative hover:text-[#F58C1F] group">
           <a href="about" class="block text-black hover:text-[#F58C1F]">ABOUT US</a>
         </div>
         <div class="flex items-center relative mx-auto hover:text-[#F58C1F] group">
@@ -124,13 +156,11 @@
         </div>
 
         <div class="flex items-center space-x-4 px-3 py-2">
-          <img class="h-6" src="../public/phoneicon.png" />
-          <img class="h-6" src="../public/mailicon.png" />
+          <img class="h-6" src="../../public/phoneicon.png" />
+          <img class="h-6" src="../../public/mailicon.png" />
         </div>
 
-        <div class="flex mx-auto justify-center flex-col space-y-2">
-</div>
-
+        <div class="flex mx-auto justify-center flex-col space-y-2"></div>
 
         <button
           class="w-full py-3 Aileron font-bold px-8 bg-[#F58C1F] text-white rounded-3xl hover:bg-white hover:text-[#F58C1F] hover:underline hover:underline-offset-4 focus:outline-none focus:ring focus:ring-[#F58C1F] focus:ring-opacity-50"
@@ -142,18 +172,9 @@
   </div>
 </template>
 
-
-
-
-
-
-
-
-
-
 <script>
 export default {
-  name: "Navbar",
+  name: 'Navbar',
   data() {
     return {
       isMenuOpen: false,
@@ -167,14 +188,14 @@ export default {
 };
 </script>
 
-
 <style scoped>
 .mobile-nav {
   z-index: 50; /* Ensure it stays above other elements */
 }
 
 /* Make the navbar sticky only on mobile and give it a white background */
-@media (max-width: 768px) { /* Adjust this value based on your breakpoint */
+@media (max-width: 768px) {
+  /* Adjust this value based on your breakpoint */
   .mobile-nav {
     position: sticky;
     top: 0;
@@ -183,21 +204,17 @@ export default {
 }
 
 /* Styles for the desktop navbar */
-@media (min-width: 769px) { /* Adjust this value based on your breakpoint */
+@media (min-width: 769px) {
+  /* Adjust this value based on your breakpoint */
   .mobile-nav {
     background-color: transparent; /* Transparent background for desktop */
   }
 }
 </style>
 
-
-
-
-
-
 <!-- <template>
     <div class="container mx-auto pt-4 z-50 absolute lg:visible invisible w-0 lg:w-full lg:mx-auto flex  justify-end text-white ">
-    
+
     <div class="flex  flex-row mr-20">
         <div>
             <div class="flex flex-row mr-10">
@@ -220,11 +237,11 @@ export default {
             </div>
         </div>
     </div>
-    
+
     </div>
-    
-    
-    
+
+
+
     <nav class="">
       <div class="absolute top-0 lg:visible invisible w-0 lg:w-full left-0 w-full h-full flex  justify-center">
         <div class="container mx-auto">
@@ -318,10 +335,10 @@ export default {
           </div>
         </div>
       </div>
-    
-    
+
+
       <div class="z-50 absolute lg:invisible visible w-full lg:w-0">
-    
+
     <ul
                 class="font-medium justify-center mx-32 md:justify-between  flex flex-row p-4 rounded-lg md:flex-row"
               >
@@ -366,7 +383,7 @@ export default {
                   </NuxtLink>
                 </li>
               </ul>
-              
+
               <div class="flex flex-row mx-12 justify-between items-center">
       <div>
         <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -385,13 +402,13 @@ export default {
         </button>
       </div>
     </div>
-    
-    
+
+
       </div>
-    
-    
+
+
     </nav>
-    
-    
+
+
     </template>
      -->

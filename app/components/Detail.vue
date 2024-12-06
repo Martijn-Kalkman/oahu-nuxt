@@ -20,5 +20,4 @@ export default {
     console.log('Tour:', tour); // Debugging
     return { tour };
   }
-
 </script>

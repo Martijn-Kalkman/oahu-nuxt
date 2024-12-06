@@ -6,11 +6,7 @@
     >
       <div class="absolute inset-0 bg-black/10 opacity-50"></div>
       <div class="absolute inset-0 flex items-center justify-center">
-        <div
-          data-aos="fade-down"
-          data-aos-duration="1500"
-          class="container mx-auto"
-        >
+        <div data-aos="fade-down" data-aos-duration="1500" class="container mx-auto">
           <h2 class="Bebas text-white text-7xl text-center font-medium">
             {{ pageData.heading || 'Default Heading' }}
           </h2>
@@ -29,20 +25,20 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted } from 'vue';
 const pageData = ref({
   backgroundImage: '',
   heading: '',
   subheading: '',
-  description: ''
-})
+  description: '',
+});
 
 onMounted(async () => {
   try {
-    const { data } = await useNuxtApp().$api.get('/api/page')
-    pageData.value = data
+    const { data } = await useNuxtApp().$api.get('/api/page');
+    pageData.value = data;
   } catch (error) {
-    console.error('Error fetching page data:', error)
+    console.error('Error fetching page data:', error);
   }
-})
+});
 </script>
