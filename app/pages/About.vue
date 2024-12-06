@@ -165,35 +165,10 @@
   </section>
 </template>
 
-<script>
-// Import Swiper Vue.js components
+<script setup lang="ts">
 import { Swiper, SwiperSlide } from 'swiper/vue';
-
-//   // Import Swiper styles
-import 'swiper/css';
-
-import 'swiper/css/pagination';
-
-//   import './style.css';
-
-// import required modules
 import { Pagination } from 'swiper/modules';
-import AOS from 'aos';
-
-export default {
-  components: {
-    Swiper,
-    SwiperSlide,
-  },
-  setup() {
-    onMounted(() => {
-      AOS.init();
-    });
-    return {
-      modules: [Pagination],
-    };
-  },
-};
+const modules = [Pagination];
 </script>
 
 <style>

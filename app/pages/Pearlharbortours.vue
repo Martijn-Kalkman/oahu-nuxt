@@ -170,28 +170,8 @@
     </div>
   </section>
 </template>
-<script>
-import 'swiper/css';
-import 'swiper/css/pagination';
-import Card from '~/app/components/Card.vue';
-import AOS from 'aos';
+<script setup lang="ts">
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Pagination } from 'swiper/modules'; // Adjust the import path as necessary
-
-export default {
-  components: {
-    Card,
-    Swiper,
-    SwiperSlide,
-  },
-  setup() {
-    onMounted(() => {
-      AOS.init();
-    });
-
-    return {
-      modules: [Pagination],
-    };
-  },
-};
+const modules = [Pagination]
 </script>

@@ -45,19 +45,19 @@
 }
 
 .custom-background1 {
-  background-image: url('../../../public/seabackground.png');
+  background-image: url('../public/seabackground.png');
   background-size: cover;
   background-position: center;
 }
 
 .custom-background2 {
-  background-image: url('../../../public/roadbackground.png');
+  background-image: url('../public/roadbackground.png');
   background-size: cover;
   background-position: center;
 }
 
 .custom-background3 {
-  background-image: url('../../../public/surfboardbackground.png');
+  background-image: url('../public/surfboardbackground.png');
   background-size: cover;
   background-position: center;
 }

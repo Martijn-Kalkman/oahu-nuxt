@@ -137,8 +137,6 @@
 
 <script setup lang="ts">
 import emailjs from '@emailjs/browser';
-import { ref } from 'vue';
-import { useRouter } from 'vue-router';
 
 const errorMessage = ref('');
 

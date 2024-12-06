@@ -323,33 +323,10 @@
     </div>
   </section>
 </template>
-<script>
-// Import Swiper Vue.js components
-
+<script setup lang="ts">
 import { Swiper, SwiperSlide } from 'swiper/vue';
-
-import './assets/main.css';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/effect-fade';
-import 'swiper/css/pagination';
-import AOS from 'aos';
 
 import { Autoplay, Pagination, Navigation, EffectFade } from 'swiper/modules';
 
-export default {
-  components: {
-    Swiper,
-    SwiperSlide,
-  },
-  setup() {
-    onMounted(() => {
-      AOS.init();
-    });
-    return {
-      modules: [Autoplay, Pagination, Navigation, EffectFade],
-    };
-  },
-};
+const modules = [Autoplay, Pagination, Navigation, EffectFade];
 </script>

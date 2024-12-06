@@ -133,20 +133,3 @@
     </div>
   </section>
 </template>
-<script>
-import AOS from 'aos';
-import Card from '~/app/components/Card.vue'; // Adjust the import path as necessary
-
-export default {
-  components: {
-    Card,
-  },
-  setup() {
-    onMounted(() => {
-      AOS.init();
-    });
-
-    return {};
-  },
-};
-</script>
